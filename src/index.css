@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.box {
+  @apply text-3xl p-5 rounded-md;
+}
+
+.large-img-box {
+  @apply bg-red-500 row-span-2 col-span-2;
+}
