@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 .box {
-  @apply text-3xl p-5 rounded-md;
+  @apply text-3xl overflow-hidden rounded-lg relative border-2;
 }
 
 .large-img-box {
-  @apply bg-red-500 row-span-2 col-span-2;
+  @apply row-span-2 col-span-2;
+}
+
+.blur-container {
+  @apply w-full h-full rounded-lg absolute top-0 left-0 hover:bg-slate-500/50 duration-100;
 }
