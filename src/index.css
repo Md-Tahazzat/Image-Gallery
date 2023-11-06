@@ -11,5 +11,5 @@
 }
 
 .blur-container {
-  @apply w-full h-full rounded-lg absolute top-0 left-0 hover:bg-slate-500/50 duration-100;
+  @apply w-full h-full rounded-lg absolute top-0 left-0 duration-100;
 }
