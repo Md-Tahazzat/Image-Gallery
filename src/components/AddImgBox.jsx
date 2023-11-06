@@ -6,11 +6,15 @@ const AddImgBox = () => {
   const { imageItems, setImageItems } = getGalleryContext();
 
   const uploadHandler = (file) => {
+    console.log(file);
+    const formData = new FormData();
+    formData.append("image", file[0]);
+
     fetch(
-      "https://api.imgbb.com/1/upload?key=eb17759c564e61a024ee388afbd8996d",
+      "https://api.imgbb.com/1/upload?key=18ddd86d254c9e3de081b003453ca635",
       {
         method: "POST",
-        body: file,
+        body: formData,
       }
     )
       .then((response) => response.json())
